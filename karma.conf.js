@@ -23,11 +23,22 @@ module.exports = function (config) {
       environment: 'dev'
     },
     reporters: ['progress', 'kjhtml'],
+    junitReporter: {
+      outputFile: 'karma-test-results.xml'
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
+    singleRun: false,
+    browserDisconnectTolerance: 2,
+    browserNoActivityTimeout: 50000,
     browsers: ['Chrome'],
-    singleRun: false
+    customLaunchers: {
+      ChromeNoSandbox: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+      }
+    }
   });
 };

@@ -1,5 +1,7 @@
 # AngularTest
 
+[![CircleCI](https://circleci.com/gh/BearandYoon/angular-test.svg?style=svg)](https://circleci.com/gh/BearandYoon/angular-test)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
