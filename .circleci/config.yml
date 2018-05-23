@@ -35,3 +35,4 @@ jobs:
 
       - run: yarn lint
       - run: yarn test
+      - run: bash <(curl -s https://codecov.io/bash) -t d93c4ec9-860a-440c-a918-f4efaec3c8e2
